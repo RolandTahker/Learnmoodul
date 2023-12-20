@@ -20,11 +20,11 @@
 
                             {{-- Display Dietary Options --}}
                             @if($article->is_vegan)
-                                <span class="badge badge-secondary badge-outline">Vegan</span>
+                                <span class="badge badge-success badge-outline">Vegan</span>
                             @endif
 
                             @if($article->is_vegetarian && !$article->is_gluten_free)
-                                <span class="badge badge-secondary badge-outline">Vegetarian</span>
+                                <span class="badge badge-primary badge-outline">Vegetarian</span>
                             @endif
 
                             @if($article->is_gluten_free)
